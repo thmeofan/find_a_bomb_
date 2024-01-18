@@ -32,7 +32,7 @@ class OnboardingScreen extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                      top: MediaQuery.of(context).size.height * 0.15,
+                      top: MediaQuery.of(context).size.height * 0.125,
                       left: MediaQuery.of(context).size.width * 0.08,
                       right: MediaQuery.of(context).size.width * 0.08),
                   child: StrokeText(

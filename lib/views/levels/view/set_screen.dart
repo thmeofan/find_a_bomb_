@@ -93,12 +93,16 @@ class _SetScreenState extends State<SetScreen> {
           ),
           Positioned(
             top: size.height * 0.06,
-            left: size.width * 0.45,
-            child: BlinkingText(
-              text: 'SET',
-              strokeWidth: 4,
-              strokeColor: AppColors.redColor,
-              textStyle: SettingsTextStyle.heavyStyle,
+            left: 0,
+            right: 0,
+            child: const Align(
+              alignment: Alignment.center,
+              child: BlinkingText(
+                text: 'SET',
+                strokeWidth: 4,
+                strokeColor: AppColors.redColor,
+                textStyle: SettingsTextStyle.heavyStyle,
+              ),
             ),
           ),
           Positioned(

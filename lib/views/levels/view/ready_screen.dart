@@ -82,12 +82,16 @@ class _ReadyScreenState extends State<ReadyScreen> {
           ),
           Positioned(
             top: size.height * 0.06,
-            left: size.width * 0.42,
-            child: BlinkingText(
-              text: 'READY',
-              strokeWidth: 4,
-              strokeColor: AppColors.redColor,
-              textStyle: SettingsTextStyle.heavyStyle,
+            left: 0,
+            right: 0,
+            child: const Align(
+              alignment: Alignment.center,
+              child: BlinkingText(
+                text: 'READY',
+                strokeWidth: 4,
+                strokeColor: AppColors.redColor,
+                textStyle: SettingsTextStyle.heavyStyle,
+              ),
             ),
           ),
           Positioned(

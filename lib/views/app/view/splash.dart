@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 image: AssetImage('assets/images/background.png'),
                 fit: BoxFit.cover,
                 colorFilter: ColorFilter.mode(
-                  AppColors.darkRedColor.withOpacity(0.8),
+                  AppColors.darkRedColor.withOpacity(0.4),
                   BlendMode.darken,
                 ),
               ),

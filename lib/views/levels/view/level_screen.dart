@@ -49,7 +49,8 @@ class _LevelScreenState extends State<LevelScreen> {
     }
   }
 
-  void _endGame() {
+  void _endGame() async {
+    await Future.delayed(Duration(milliseconds: 500));
     Navigator.of(context).pushNamed(AppRoutes.result);
     score += 15;
   }
@@ -108,12 +109,16 @@ class _LevelScreenState extends State<LevelScreen> {
           ),
           Positioned(
             top: size.height * 0.06,
-            left: size.width * 0.465,
-            child: BlinkingText(
-              text: 'GO',
-              strokeWidth: 4,
-              strokeColor: AppColors.redColor,
-              textStyle: SettingsTextStyle.heavyStyle,
+            left: 0,
+            right: 0,
+            child: const Align(
+              alignment: Alignment.center,
+              child: BlinkingText(
+                text: 'GO',
+                strokeWidth: 4,
+                strokeColor: AppColors.redColor,
+                textStyle: SettingsTextStyle.heavyStyle,
+              ),
             ),
           ),
           Positioned(
